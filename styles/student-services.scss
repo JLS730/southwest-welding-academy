@@ -1,0 +1,442 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+
+    .navigation-section {
+        width: 100%;
+        position: relative;
+        // min-height: 80px;
+        overflow: hidden;
+
+
+        .header-image {
+            position: absolute;
+            z-index: -2;
+            width: 100%;
+            // height: 40vmin;
+            top: -30em;
+            min-height: 100px;
+            object-fit: cover;
+        }
+
+        .image-tint {
+            background-color: rgba(200, 100, 0, .5);
+            background-blend-mode: multiply;
+        }
+
+        .header-image-tint {
+            position: absolute;
+            z-index: -1;
+            height: 1000px;
+            width: 100%;
+            // height: 40vmin;
+            // top: -30em;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .navigation-container {
+            width: 1170px;
+            max-width: 100%;
+            // background-color: aqua;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // z-index: 1;
+            font-family: "Roboto", sans-serif;
+
+            .navigation-bar-left {
+                width: 50%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .navigation-logo {
+                    height: 70px;
+                }
+
+                .navigation-header {
+                    width: 250px;
+                    // background-color: #ce9233;
+                    text-align: center;
+                    font-size: 1.7em;
+                    color: white;
+                }
+            }
+
+            .navigation-bar-right {
+
+
+                .navigation-links-container {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    // background-color: pink;
+                    width: 700px;
+
+                    .navigation-links {
+                        margin: 0 1.5em;
+                        // width: 120px;
+                        // width: ;
+
+                        .links {
+                            font-size: 1.1em;
+                            padding: .2em .3em;
+                            text-decoration: none;
+                            color: white;
+                            font-weight: 500;
+                        }
+                        
+                        .links.active {
+                            border: 2px solid #ce9233;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navigation-information-container {
+            height: 450px;
+            width: 750px;
+            // background-color: pink;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 20em;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+
+            .information-header {
+                font-size: 3.5em;
+                text-align: center;
+                color: white;
+                font-family: "Alfa Slab One", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .information-link-button {
+                font-size: 2em;
+                padding: .1em 1em;
+                background-color: #ce9233;
+                border: none;
+            }
+        }
+    }
+
+    .student-services-section {
+        // background-color: aqua;
+        padding: 4em 0;
+        
+        .student-services-container {
+            margin: 0 auto;
+            width: 1170px;
+            font-family: "Roboto", sans-serif;
+
+            .application-requirements-title {
+                padding: .8em 0;
+            }
+            
+            .requirements-list {
+                // background-color: aqua;
+                margin-left: 2em;
+            }
+
+            .requirement-note {
+                padding: 1em 0;
+                font-size: 1.1em;
+                font-style: italic;
+            }
+
+            .admissions-title {
+                font-size: 2em;
+                padding: .8em 0;
+            }
+
+            .coordinator-information-container {
+
+                h2 {
+                    font-size: 1.1em;
+                    font-weight: 400;
+                    margin: .1em 0;
+                }
+            }
+
+            .school-tours-note {
+                padding: 1em 1.5em;
+                margin-top: 2em;
+
+                span {
+                    color: red;
+                }
+            }
+
+            .tuition-title {
+                font-size: 2em;
+                padding-top: .8em;
+            }
+
+            .tuition-text {
+                margin: 2em 0;
+                font-weight: 400;
+            }
+
+            .tuition-note {
+                text-align: center;
+            }
+
+            .tuition-rates-title {
+                font-size: 2em;
+                padding-top: .8em;
+            }
+
+            .tuition-rates-subtitle {
+                font-size: 1.1em;
+            }
+
+            .tuition-information-container {
+                // background-color: aqua;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .tuition-cost-container {
+                    // background-color: antiquewhite;
+                    
+                    table {
+                        margin: 1em 0;
+
+                        tr {
+                            margin: .2em;
+
+                            td {
+                                padding: 0 2em;
+                            }
+                        }
+                    }
+                }
+
+                .tuition-equipment-container {
+                    // background-color: #ce9233;
+
+                    .equipment-title {
+                        padding: .5em 0;
+
+                    }
+                    
+                    .equipment-list {
+                        
+                        .equipment {
+                            list-style: none;
+                            margin: .2em 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-section {
+        min-height: 520px;
+        // max-height: 100%;
+        width: 100%;
+        background-color: #171612;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        bottom: 0;
+        // z-index: -1;
+
+        .footer-container {
+            width: 1170px;
+            // background-color: #ce9233;
+
+            .footer-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .footer-left {
+                    width: 33%;
+
+                    .footer-logo-container {
+                        width: 80%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        .footer-logo {
+                            height: 70px;
+                        }
+
+                        .footer-logo-header {
+                            // width: 290px;
+                            // background-color: #ce9233;
+                            text-align: center;
+                            font-size: 1.7em;
+                            color: white;
+
+                        }
+
+                    }
+
+                    .footer-header {
+                        font-family: "Roboto", sans-serif;
+                        font-weight: 400;
+                        padding: 2em 0;
+                        font-size: 1em;
+                        line-height: 1.5;
+                        color: #9a9693;
+                    }
+                    
+                    .footer-contact-us-button {
+                        font-size: 1.5em;
+                        // border: 2px solid black;
+                        padding: .7em 1.8em;
+                        border: none;
+                        background-color: #ce9233;
+                        color: white;
+                        position: relative;
+                    }
+                    .footer-contact-us-button.btn-background-slide::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: -1;
+                        background-color: #9a9693;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        transition: .2s all ease-out;
+                    }
+                    .footer-contact-us-button.btn-background-slide:hover::before,
+                    .footer-contact-us-button.btn-background-slide:focus::before {
+                        transform: scaleX(1);
+                    }
+                    .footer-contact-us-button.btn-background-slide {
+                        z-index: 1;
+                    }
+                }
+                
+                .footer-middle {
+                    width: 33%;
+                    // background-color: aliceblue;
+                    padding: 0 3em;
+                    align-self: flex-start;
+
+                    .footer-links-header {
+                        font-size: 1.8em;
+                        font-family: "Roboto", sans-serif;
+                        padding-bottom: 2em;
+                        color: white;
+                    }
+
+                    .footer-links-container {
+                        list-style: none;
+
+                        .footer-links {
+                            font-family: "Roboto", sans-serif;
+
+                            i {
+                                margin: .4em 0;
+                                color: #ce9233;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                margin-left: .4em;
+                                color: #9a9693;
+                            }
+                        }
+                    }
+                }
+
+                .footer-right {
+                    width: 33%;
+                    // background-color: aliceblue;
+                    padding: 0 2.7em;
+                    align-self: flex-start;
+
+                    .footer-contact-header {
+                        font-size: 1.8em;
+                        font-family: "Roboto", sans-serif;
+                        padding-bottom: 1em;
+                        color: white;
+                    }
+
+                    .footer-contact-containers {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 100%;
+                        // background-color: aquamarine;
+                        margin: 1em 0;
+                        padding: .6em 0;
+                        border-bottom: 1px solid grey;
+
+                        i {
+                            // background-color: aqua;
+                            width: 30px;
+                            justify-self: flex-start;
+                            color: #ce9233;
+                        }
+
+                        .contact-header {
+                            // font-size: 1.8em;
+                            font-weight: 500;
+                            font-family: "Roboto", sans-serif;
+                            color: #9a9693;
+                        }
+                    }
+                }
+            }
+
+            .footer-bottom {
+                // background-color: aqua;
+                // width: 100%;
+                height: 165px;
+                // background-color: #12100f;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .footer-socials-container {
+
+                    i {
+                        font-size: 1.9em;
+                        margin: 0 .3em;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+                
+                .footer-copyright {
+                    font-family: "Roboto", sans-serif;
+                    padding-top: 1.3em;
+                    font-weight: 400;
+                    color: #ce9233;
+                }
+            }
+        }
+    }
+}
+

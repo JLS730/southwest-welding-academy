@@ -70,13 +70,15 @@ body .navigation-section .navigation-container .navigation-bar-right .navigation
 body .navigation-section .navigation-container .navigation-bar-right .navigation-links-container .navigation-links {
   margin: 0 1.5em;
 }
-body .navigation-section .navigation-container .navigation-bar-right .navigation-links-container .navigation-links a {
+body .navigation-section .navigation-container .navigation-bar-right .navigation-links-container .navigation-links .links {
   font-size: 1.1em;
-  border: 2px solid #ce9233;
   padding: 0.2em 0.3em;
   text-decoration: none;
   color: white;
   font-weight: 500;
+}
+body .navigation-section .navigation-container .navigation-bar-right .navigation-links-container .navigation-links .links.active {
+  border: 2px solid #ce9233;
 }
 body .navigation-section .navigation-information-container {
   height: 450px;
@@ -130,7 +132,7 @@ body .main-section .main-section-container .main-image-container .image-containe
   left: 13em;
 }
 body .main-section .main-section-container .main-image-container .image-container-1 img {
-  height: 500px;
+  height: 470px;
 }
 body .main-section .main-section-container .main-image-container .image-container-2 {
   position: absolute;

@@ -106,7 +106,7 @@ body .navigation-section .header-image {
   z-index: -2;
   width: 100%;
   top: -30em;
-  min-height: 1200px;
+  min-height: 2000px;
   -o-object-fit: cover;
      object-fit: cover;
 }

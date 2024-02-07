@@ -5,10 +5,6 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   position: relative;
   min-height: 100vh;
 }
@@ -106,7 +102,7 @@ body .navigation-section .header-image {
   z-index: -2;
   width: 100%;
   top: -30em;
-  min-height: 1200px;
+  min-height: 2000px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -231,86 +227,26 @@ body .navigation-section .navigation-information-container .information-link-but
   background-color: #ce9233;
   border: none;
 }
-body .contact-section {
-  min-height: auto;
-  width: 100%;
-  position: static;
+body .faq-section {
+  padding: 4em 0;
 }
-body .contact-section .contact-section-container {
-  background-color: #ce9233;
-  width: 100%;
-}
-body .contact-section .contact-map-container {
-  padding: 4em 0.4em;
-}
-body .contact-section .contact-map-container #map {
-  height: 500px;
+body .faq-section .faq-container {
+  margin: 0 auto;
   width: 1170px;
   max-width: 100%;
-  margin: 0 auto;
-}
-body .contact-section .contact-information-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 500px;
-  width: 1170px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-body .contact-section .contact-information-section .contact-container {
-  width: 50%;
   padding: 0 0.4em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-body .contact-section .contact-information-section .contact-container label {
-  width: 100%;
-  padding-bottom: 0.2em;
   font-family: "Roboto", sans-serif;
 }
-body .contact-section .contact-information-section .contact-container input {
-  width: 100%;
-  margin-bottom: 1em;
-  padding: 0.1em;
+body .faq-section .faq-container .faq-title {
+  padding: 2em 0;
 }
-body .contact-section .contact-information-section .contact-container textarea {
-  width: 100%;
-  margin-bottom: 2em;
-}
-body .contact-section .contact-information-section .contact-container button {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9em;
-  padding: 0.2em 3em;
-  border: 1px solid #ce9233;
-}
-body .contact-section .contact-information-section .contact-information-container .contact-information-image-container {
-  height: 250px;
-  width: 400px;
-  border: 1px solid black;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-body .contact-section .contact-information-section .contact-information-container .contact-information-image-container .contact-information-image {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 400px;
-  position: absolute;
-  top: -40px;
-}
-body .contact-section .contact-information-section .contact-information-container .address-container {
-  font-family: "Roboto", sans-serif;
-  padding: 1.5em 0.5em;
-}
-body .contact-section .contact-information-section .contact-information-container .address-container h1 {
-  padding-bottom: 0.5em;
-  text-align: center;
-}
-body .contact-section .contact-information-section .contact-information-container .address-container h2 {
+body .faq-section .faq-container .faq-question {
   font-size: 1.2em;
+}
+body .faq-section .faq-container .faq-answer {
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1em 0 4em 0;
 }
 body .footer-section {
   min-height: 520px;
@@ -346,6 +282,7 @@ body .footer-section .footer-container .footer-top .footer-left .footer-logo-con
   text-align: center;
   font-size: 1.7em;
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 body .footer-section .footer-container .footer-top .footer-left .footer-header {
   font-family: "Roboto", sans-serif;
@@ -484,18 +421,9 @@ body .footer-section .footer-container .footer-bottom .footer-copyright {
   .navigation-bar-hamburger {
     visibility: visible !important;
   }
-  .contact-information-section {
-    flex-direction: column !important;
-  }
-  .contact-information-section .contact-container {
-    padding: 1.5em 0 !important;
-    width: 90% !important;
-  }
-  .contact-information-section .contact-information-image-container {
-    height: 200px !important;
-    width: 350px !important;
-  }
-  .contact-information-section .address-container {
+}
+@media (max-width: 700px) {
+  .faq-container {
     text-align: center !important;
   }
 }
@@ -511,4 +439,4 @@ body .footer-section .footer-container .footer-bottom .footer-copyright {
   100% {
     left: 100%;
   }
-}/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=faq.css.map */
